@@ -1,9 +1,103 @@
-*{
+* {
    margin: 0;
    padding: 0;
 }
 
-body{
-background: linear-gradient(135deg, #1B031E66,#031E1A66);
+body {
+   /*    background: linear-gradient(135deg, #00080C42, #00080CB0);
+ */
+   background-color: #42575A;
+   font-family: fantasy;
+}
+
+.container {
+   background-image: url('bng.png');
+   background-position: absolute;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+h1 {
+   color: #6AA92BE0;
+}
+
+
+.wrapper {
+   max-width: 200px;
+   height: 200px;
+   border-radius: 900px;
+   babackground-size: 100%;
+   box-shadow: 3px 5px 5px grey;
+   animation: BgAnimation 50s linear infinite;
+}
+
+@keyframes BgAnimation {
+   0% {
+      background-image: url('papa.png');
+      background-size: cover;
+   }
    
+   35% {
+      background-image: url('mama.png');
+      background-size: cover;
+   }
+   
+   50% {
+      background-image: url('jed.png');
+      background-size: cover;
+   }
+   
+   75% {
+      background-image: url('haruna.png');
+      background-size: cover;
+   }
+   
+   100% {
+      background-image: url('central.png');
+      background-size: cover;
+   }
+}
+
+
+.display {
+   font-family: "Dangrek", serif;
+   background: linear-gradient(45deg, cyan, yellow, blue, green);
+   background-clip: text;
+   color: transparent;
+   background-size: 400% 400%;
+   animation: dis 3s ease infinite;
+}
+
+@keyframes dis {
+   0% {
+      background-position: 0;
+   }
+}
+
+
+div:hover {
+   margin-top: 50px;
+   height: 70px;
+   width: 80px;
+   transform: scale(2.5);
+   border: 0.25px solid dimgrey;
+   border-radius: 3%;
+}
+
+main {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+}
+
+.contain img {
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+}
+
+figcaption {
+   font-size: 10px;
+   color: papayawhip;
+   font-weight: bolder;
 }
