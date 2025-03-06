@@ -6,7 +6,8 @@
 body {
    /*    background: linear-gradient(135deg, #00080C42, #00080CB0);
  */
-   background-color: steelblue;
+   background-color: #C9E4CA;
+   
    font-family: fantasy;
 }
 
@@ -76,18 +77,19 @@ h1 {
 
 
 div:hover {
-   margin-top: 50px;
+   margin-top: 30px;
    height: 70px;
    width: 80px;
-   transform: scale(2.5);
+   transform: scale(2.0);
    border: 0.25px solid dimgrey;
    border-radius: 3%;
+   transition: 2s ease-in-out;
 }
 
 main {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   grid-gap: 10px;
+   grid-gap: 0.25px;
 }
 
 .contain img {
